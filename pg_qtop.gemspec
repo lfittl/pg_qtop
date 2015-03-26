@@ -30,4 +30,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'pg_query'
   s.add_runtime_dependency 'curses'
   s.add_runtime_dependency 'mixlib-cli'
+  s.add_runtime_dependency 'activesupport'
 end

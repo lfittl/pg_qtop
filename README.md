@@ -15,13 +15,19 @@ gem install pg_qtop
 ## Usage
 
 ```
-pg_qtop -d DATABASE
+pg_qtop -d DATABASE -h HOSTNAME -p PORT -U USER
 ```
 
 In order to filter queries on a certain table, specify it with `-t`:
 
 ```
 pg_qtop -d DATABASE -t TABLE
+```
+
+You can also filter the kind of statements that are shown with `-s`, e.g.:
+
+```
+pg_qtop -d DATABASE -t TABLE -s insert
 ```
 
 ## Authors
