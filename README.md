@@ -30,6 +30,18 @@ You can also filter the kind of statements that are shown with `-s`, e.g.:
 pg_qtop -d DATABASE -t TABLE -s insert
 ```
 
+## Sample Output
+
+```
+AVG     | CALLS | HIT RATE      | QUERY
+--------------------------------------------------------------------------------
+50.1ms  | 20    | 45.0          | SELECT * FROM databases;
+2.1ms   | 12    | 97.0          | SELECT * FROM users;
+0.0ms   | 1     | -             | SELECT * FROM query_snapshots;
+```
+
+The view auto-refreshes every second.
+
 ## Authors
 
 - [Lukas Fittl](https://github.com/lfittl)
