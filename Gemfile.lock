@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pg_qtop (0.0.1)
+    pg_qtop (0.0.2)
       activesupport
       curses
       mixlib-cli
